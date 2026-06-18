@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* Di Tailwind v4, kita mendefinisikan warna custom di dalam @theme */
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA7C11;
+}
+
+@layer base {
+  * {
+    @apply border-neutral-800;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-gold/30 selection:text-gold;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer components {
+  /* Luxury Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-800 rounded-full border-2 border-neutral-950 hover:bg-gold/50 transition-colors;
+  }
+
+  /* Premium Golden Gradient Utilities */
+  .bg-gold-gradient {
+    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light;
+  }
+
+  .text-gold-gradient {
+    @apply bg-gradient-to-r from-gold-light via-gold to-gold-dark bg-clip-text text-transparent;
+  }
+
+  /* Hover & Glow Effects */
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+
+  .gold-glow-hover:hover {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.4);
+  }
+
+  /* Glassmorphism for Luxury UI */
+  .glass-card {
+    @apply bg-neutral-900/40 backdrop-blur-md border border-white/5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Animasi halus untuk filter */
+  .filter-gold {
+    filter: sepia(1) saturate(5) hue-rotate(10deg);
+  }
+
+  /* Masking untuk fade effect pada gambar masonry */
+  .mask-gradient-b {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+}
+
+/* Kustomisasi Accordion agar tidak kaku */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Optimasi Performa Animasi */
+.motion-reduce-safe {
+  @media (prefers-reduced-motion: reduce) {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Utility untuk Masonry Grid jika dibutuhkan fallback */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
