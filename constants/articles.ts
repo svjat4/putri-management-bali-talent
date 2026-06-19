@@ -13,11 +13,11 @@ export const ARTICLES = [
       <p>Berbeda dengan club, villa party seringkali memiliki ruang yang lebih intim. Sangat penting memilih talent dari agency terpercaya seperti Putri Management Bali yang menjamin keamanan, terutama untuk pertunjukan berisiko seperti Fire Dance. Talent bersertifikat tahu persis cara berinteraksi dalam jarak dekat tanpa membahayakan tamu.</p>
       <br/>
       <h3 class="text-xl text-gold font-semibold mb-2">3. Interaksi Adalah Kunci</h3>
-      <p>Hiburan premium bukan hanya tentang apa yang dilihat tamu, tapi apa yang mereka rasakan. Seorang <strong>Host Party</strong> atau <strong>DJ</strong> yang pandai membaca *crowd* akan mengubah suasana pesta dari yang sekadar "bagus" menjadi "luar biasa".</p>
+      <p>Hiburan premium bukan hanya tentang apa yang dilihat tamu, tapi apa yang mereka rasakan. Seorang <strong>Host Party</strong> atau <strong>DJ</strong> yang pandai membaca <em>crowd</em> akan mengubah suasana pesta dari yang sekadar "bagus" menjadi "luar biasa".</p>
       <br/>
       <p>Jangan pertaruhkan reputasi event Anda. Konsultasikan kebutuhan entertainment villa party Anda bersama <strong>Putri Management Bali</strong> untuk mendapatkan kurasi talent terbaik di kelasnya.</p>
     `,
-    image: "/images/awal3.png", // Siapkan gambar di public/images/journal-1.jpg
+    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1000",
     date: "18 Jun 2026",
     category: "Event Tips"
   },
@@ -36,7 +36,7 @@ export const ARTICLES = [
       <br/>
       <p>Putri Management Bali menyediakan Fire Dancer dengan standar keamanan internasional dan koreografi spektakuler yang siap membakar semangat di event beach club Anda.</p>
     `,
-    image: "/images/fire.jpg",
+    image: "https://images.unsplash.com/photo-1504508492049-7439bd138241?auto=format&fit=crop&q=80&w=1000",
     date: "12 Jun 2026",
     category: "Performance"
   },
@@ -50,13 +50,59 @@ export const ARTICLES = [
       <h3 class="text-xl text-gold font-semibold mb-2">Simbol Penyambutan yang Penuh Hormat</h3>
       <p>Tarian seperti Tari Pendet atau Tari Puspanjali pada dasarnya adalah tarian penyambutan. Menghadirkan tarian ini di awal acara Gala Dinner tidak hanya memberikan hiburan, tetapi juga mengirimkan pesan rasa hormat dan apresiasi yang tinggi kepada para dewan direksi, klien VIP, maupun karyawan yang hadir.</p>
       <br/>
-      <h3 class="text-xl text-gold font-semibold mb-2">Keseimbangan Antara Bisnis dan Budaya</h3>
-      <p>Corporate event seringkali terasa kaku. Kehadiran penari tradisional dengan kostum emas yang berkilau, diiringi alunan gamelan yang ritmis, langsung mencairkan suasana dan memberikan ruang bagi para tamu untuk mengapresiasi mahakarya budaya. Ini memberikan nilai tambah <em>(added value)</em> yang tidak bisa diukur dengan uang bagi perusahaan penyelenggara.</p>
+      <h3 class="text-xl text-gold font-semibold mb-2">Sinergi Budaya dan Kearifan Lokal</h3>
+      <p>Corporate event seringkali terasa kaku. Kehadiran penari tradisional dengan kostum emas yang berkilau, diiringi alunan gamelan yang ritmis, langsung mencairkan suasana. Lebih dari itu, mengapresiasi budaya tidak berhenti hanya pada seni pertunjukan. Sebagai manajemen yang menjunjung tinggi nilai kearifan nusantara, kami juga senantiasa mendukung inisiatif pelestarian kekayaan lokal, salah satunya melalui perluasan jaringan <em>sister-company</em> kami, <a href="https://jajananmagetan.biz.id" target="_blank" rel="noopener noreferrer" class="text-gold font-medium border-b border-gold/30 hover:border-gold pb-0.5 transition-colors">Jajanan Magetan</a>, yang berfokus pada kelestarian kuliner tradisional. Sentuhan kultural yang menyeluruh seperti ini akan memberikan nilai tambah <em>(added value)</em> yang berkesan bagi tamu Anda.</p>
       <br/>
       <p>Dengan kurasi ketat, Putri Management Bali memastikan setiap penari tradisional yang tampil memiliki keluwesan, penjiwaan (taksu), dan kostum premium yang layak ditampilkan di hadapan tamu VVIP perusahaan Anda.</p>
     `,
-    image: "/images/tari-bali.webp",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1000",
     date: "05 Jun 2026",
     category: "Culture"
+  },
+  {
+    slug: "peran-krusial-host-party-dalam-private-event",
+    title: "Peran Krusial Host Party dalam Menghidupkan Suasana Private Event",
+    excerpt: "Sebuah acara mewah bisa terasa hambar tanpa pemandu yang tepat. Pelajari bagaimana Host Party profesional mengubah dinamika malam Anda.",
+    content: `
+      <p>Di balik gemerlapnya lampu dan mewahnya hidangan, nyawa dari sebuah <em>private event</em> atau <em>birthday bash</em> terletak pada alur acara dan energi para tamu. Di sinilah peran seorang <strong>Host Party</strong> menjadi sangat vital.</p>
+      <br/>
+      <h3 class="text-xl text-gold font-semibold mb-2">Bukan Sekadar MC Biasa</h3>
+      <p>Seorang Host Party yang mumpuni tidak hanya membaca naskah acara. Mereka adalah penggerak massa, <em>ice-breaker</em>, dan pusat energi. Saat tamu mulai terlihat pasif, Host Party dari Putri Management tahu persis bagaimana berinteraksi secara elegan, mengajak tamu berdansa, dan menaikkan tempo acara secara natural tanpa terkesan memaksa.</p>
+      <br/>
+      <p>Untuk event Anda berikutnya di Bali, pastikan Anda menyewa Host Party yang memiliki karisma dan jam terbang tinggi untuk menjamin kesuksesan malam Anda.</p>
+    `,
+    image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1000",
+    date: "28 Mei 2026",
+    category: "Talent Spotlight"
+  },
+  {
+    slug: "belly-dance-sentuhan-eksotis-timur-tengah",
+    title: "Belly Dance: Memberikan Sentuhan Eksotis Timur Tengah di Pulau Dewata",
+    excerpt: "Ingin menghadirkan nuansa berbeda di acara Anda? Belly Dance menawarkan perpaduan keanggunan dan ritme eksotis yang memukau mata.",
+    content: `
+      <p>Meskipun Bali kental dengan budaya tropisnya, banyak klien kami yang menginginkan tema <em>Arabian Nights</em> atau suasana eksotis Mediterania untuk <em>private gathering</em> mereka. <strong>Belly Dance (Tari Perut)</strong> adalah jawaban paling elegan untuk kebutuhan ini.</p>
+      <br/>
+      <h3 class="text-xl text-gold font-semibold mb-2">Elegan dan Memikat</h3>
+      <p>Belly Dancer profesional tidak hanya menari, tetapi juga bercerita melalui isolasi otot yang rumit dan penggunaan properti seperti sayap sutra (Isis Wings) atau pedang. Pertunjukan ini sangat cocok untuk menemani sesi <em>dinner</em> santai atau sebagai pertunjukan utama sebelum pesta sesungguhnya dimulai.</p>
+    `,
+    image: "https://images.unsplash.com/photo-1469504512102-900f29606341?auto=format&fit=crop&q=80&w=1000",
+    date: "15 Mei 2026",
+    category: "Performance"
+  },
+  {
+    slug: "meningkatkan-kualitas-night-club-dengan-sexy-dancer",
+    title: "Meningkatkan Kualitas Night Club dengan Pertunjukan Sexy Dancer Profesional",
+    excerpt: "Panduan mengelola hiburan klub malam di Bali: Mengapa kehadiran Sexy Dancer yang profesional dan berkelas sangat menentukan reputasi venue Anda.",
+    content: `
+      <p>Industri hiburan malam di Bali bersaing dengan sangat ketat. Untuk membuat <em>Night Club</em> Anda menonjol, musik yang bagus saja tidak cukup. Dibutuhkan elemen visual yang dinamis, dan di sinilah <strong>Sexy Dancer</strong> mengambil peran utama di atas panggung.</p>
+      <br/>
+      <h3 class="text-xl text-gold font-semibold mb-2">Menjaga Garis Antara Sensual dan Elegan</h3>
+      <p>Kunci dari pertunjukan klub kelas atas adalah koreografi yang atraktif namun tetap menjaga batas kesopanan dan keeleganan. Talent dari Putri Management Bali dilatih secara khusus untuk menyajikan tarian yang memancarkan aura sensual secara artistik dan profesional, disesuaikan dengan genre musik yang dimainkan oleh DJ.</p>
+      <br/>
+      <p>Kehadiran mereka tidak hanya menghibur, tetapi juga memicu para pengunjung untuk turut meramaikan lantai dansa, menciptakan malam yang hidup dan menguntungkan bagi <em>venue</em> Anda.</p>
+    `,
+    image: "https://images.unsplash.com/photo-1574406280735-351fc1a7c5e0?auto=format&fit=crop&q=80&w=1000",
+    date: "02 Mei 2026",
+    category: "Event Tips"
   }
 ];
