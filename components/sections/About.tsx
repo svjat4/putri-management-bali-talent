@@ -13,9 +13,9 @@ export default function About() {
 
   // 1. Daftar gambar yang akan bergeser otomatis di dalam section About
   const aboutImages = [
-    "/images/awal.png",
-    "/images/awal2.png", // Siapkan file ini di public/images/ jika ada
-    "/images/awal3.png", // Siapkan file ini di public/images/ jika ada
+    "/images/awal.webp",
+    "/images/awal2.webp", // Siapkan file ini di public/images/ jika ada
+    "/images/awal3.webp", // Siapkan file ini di public/images/ jika ada
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -100,16 +100,16 @@ export default function About() {
             Putri Management Bali adalah agency penyedia talent profesional yang siap mendukung berbagai acara dan event di Bali. Kami menyediakan berbagai pilihan talent berkualitas yang dapat meningkatkan pengalaman tamu dan memberikan hiburan terbaik untuk setiap acara.
           </p>
 
-          {/* Paragraf Sisipan Sister Company (Jajanan Magetan) */}
-          <p className="text-neutral-400 text-sm leading-relaxed font-light mb-8 italic border-l-2 border-gold/30 pl-4">
-            Sebagai bagian dari portofolio grup kami yang lebih luas, manajemen kami juga turut mendukung inisiatif kuliner nusantara melalui jaringan sister-company kami,{" "}
+          {/* Paragraf Sisipan Sister Company (Tersamar) */}
+          <p className="text-neutral-500 text-[11px] leading-relaxed font-light mb-8 opacity-60 hover:opacity-100 transition-opacity">
+            Operasi manajemen kami didukung oleh berbagai mitra strategis, termasuk pengembangan{" "}
             <a 
               href="https://jajananmagetan.biz.id" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-white hover:text-gold transition-colors font-medium not-italic border-b border-gold/30 hover:border-gold pb-0.5"
+              className="hover:text-gold transition-colors underline decoration-neutral-800 underline-offset-4"
             >
-              Jajanan Magetan
+              inisiatif kuliner lainnya
             </a>.
           </p>
 
