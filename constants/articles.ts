@@ -36,7 +36,7 @@ export const ARTICLES = [
       <br/>
       <p>Putri Management Bali menyediakan Fire Dancer dengan standar keamanan internasional dan koreografi spektakuler yang siap membakar semangat di event beach club Anda.</p>
     `,
-    image: "https://images.unsplash.com/photo-1504508492049-7439bd138241?auto=format&fit=crop&q=80&w=1000",
+    image: "/images/fire.jpg",
     date: "12 Jun 2026",
     category: "Performance"
   },

@@ -28,14 +28,17 @@ export default function Talent() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="group relative bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-gold/50 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)]"
             >
-              {/* Image Container with Optimization */}
+              {/* Image Container with Dynamic Optimization */}
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
                   src={talent.img}
                   alt={`Putri Management Premium ${talent.name} Talent Bali`}
                   fill
-                  sizes="(max-w-7xl) 25vw, 50vw"
-                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  // 4 Gambar pertama (index 0-3) menggunakan priority
+                  priority={index < 4}
+                  // Gambar sisanya akan otomatis menggunakan lazy loading
+                  loading={index < 4 ? undefined : "lazy"}
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent" />
