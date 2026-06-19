@@ -12,7 +12,7 @@ export const TALENTS = [
     name: "Sexy Dance", 
     desc: "Pertunjukan tari sensual berenergi tinggi.", 
     keunggulan: "Koreografi modern & kostum eksklusif", 
-    img: "/images/sexy-dance.png" // 👈 Mengarah ke public/images/sexy-dance.jpg
+    img: "/images/sexy-dance.webp" // 👈 Mengarah ke public/images/sexy-dance.jpg
   },
   { 
     id: "fire-dance", 
@@ -68,7 +68,7 @@ export const TALENTS = [
     name: "Dark Queen", 
     desc: "Karakter teatrikal misterius dengan kostum avant-garde.", 
     keunggulan: "Konsep teatrikal premium berskala internasional", 
-    img: "/images/dark.png" 
+    img: "/images/dark.webp" 
   },
   { 
     id: "bartender", 
