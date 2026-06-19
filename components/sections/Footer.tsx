@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link"; // 👈 Wajib import ini
+import Link from "next/link";
 import { BUSINESS_INFO } from "@/constants/data";
 import { useWhatsApp } from "@/hooks/useWhatsApp";
 
@@ -21,9 +21,7 @@ export default function Footer() {
         </div>
 
         {/* Bagian Kanan: Menu Navigasi */}
-        {/* Ditambahkan flex-wrap agar aman di layar HP */}
         <div className="flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest">
-          {/* Ubah semua tag <a> menjadi <Link> agar jika diklik dari halaman artikel, bisa kembali ke Home dengan mulus */}
           <Link href="/#about" className="hover:text-gold transition-colors">About</Link>
           <Link href="/#talents" className="hover:text-gold transition-colors">Talents</Link>
           <Link href="/#pricing" className="hover:text-gold transition-colors">Pricing</Link>
@@ -42,10 +40,28 @@ export default function Footer() {
       {/* Garis Pemisah */}
       <div className="h-[1px] bg-neutral-900 my-8 max-w-5xl mx-auto" />
 
-      {/* Copyright */}
-      <p className="text-center text-[10px] text-neutral-600">
-        &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. Crafted for High Conversions.
-      </p>
+      {/* Bagian Bawah: Partner & Copyright */}
+      <div className="flex flex-col items-center gap-4">
+        {/* Sisipan Link Jajanan Magetan */}
+        <div>
+          <p className="text-[10px] text-neutral-700 uppercase tracking-widest mb-1">
+            Our Partner
+          </p>
+          <a 
+            href="https://jajananmagetan.biz.id" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-xs text-neutral-500 hover:text-gold transition-colors"
+          >
+            Jajanan Magetan
+          </a>
+        </div>
+
+        {/* Copyright */}
+        <p className="text-[10px] text-neutral-600">
+          &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. Crafted for High Conversions.
+        </p>
+      </div>
     </footer>
   );
 }

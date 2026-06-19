@@ -89,13 +89,28 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-gold text-xs font-semibold uppercase tracking-wildest block mb-2">EXCLUSIVE AGENCY</span>
+          <span className="text-gold text-xs font-semibold uppercase tracking-widest block mb-2">EXCLUSIVE AGENCY</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mb-6">
             Tentang Putri Management Bali
           </h2>
           <div className="h-[2px] w-20 bg-gold mb-6" />
-          <p className="text-neutral-300 leading-relaxed font-light mb-6">
+          
+          {/* Paragraf Utama */}
+          <p className="text-neutral-300 leading-relaxed font-light mb-4">
             Putri Management Bali adalah agency penyedia talent profesional yang siap mendukung berbagai acara dan event di Bali. Kami menyediakan berbagai pilihan talent berkualitas yang dapat meningkatkan pengalaman tamu dan memberikan hiburan terbaik untuk setiap acara.
+          </p>
+
+          {/* Paragraf Sisipan Sister Company (Jajanan Magetan) */}
+          <p className="text-neutral-400 text-sm leading-relaxed font-light mb-8 italic border-l-2 border-gold/30 pl-4">
+            Sebagai bagian dari portofolio grup kami yang lebih luas, manajemen kami juga turut mendukung inisiatif kuliner nusantara melalui jaringan sister-company kami,{" "}
+            <a 
+              href="https://jajananmagetan.biz.id" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:text-gold transition-colors font-medium not-italic border-b border-gold/30 hover:border-gold pb-0.5"
+            >
+              Jajanan Magetan
+            </a>.
           </p>
 
           <h3 className="text-white font-semibold text-lg mb-4">Sempurna Untuk Menyemarakkan:</h3>

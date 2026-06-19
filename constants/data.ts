@@ -3,7 +3,7 @@ export const BUSINESS_INFO = {
   phone: "6287897465067",
   email: "devicandraa97@gmail.com",
   instagram: "putrimanagementbali",
-  baseUrl: "https://putrimanagementbali.com",
+  baseUrl: "https://www.putrimanagementbali.biz.id/",
 };
 
 export const TALENTS = [

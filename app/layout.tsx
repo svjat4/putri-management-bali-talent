@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css"; // Pastikan nama filenya globals.css (pakai s)
+import "./globals.css"; 
 import FloatingWA from "@/components/FloatingWA";
 import JsonLd from "@/components/JsonLd";
+import GoogleAnalytics from "@/components/GoogleAnalytics"; // 👈 Tambahkan import ini
 import { BUSINESS_INFO } from "@/constants/data";
-import React from "react"; // Tambahkan import React
+import React from "react"; 
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.baseUrl),
@@ -37,11 +38,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode; // 👈 PERBAIKAN DI SINI (Sebelumnya karakter aneh '瑯ode')
+  children: React.ReactNode; 
 }) {
   return (
     <html lang="id" className="scroll-smooth">
       <body className="bg-background text-white antialiased selection:bg-gold/30 selection:text-gold">
+        <GoogleAnalytics /> {/* 👈 Panggil komponennya di sini, di bawah tag body */}
         {children}
         <FloatingWA />
         <JsonLd />
